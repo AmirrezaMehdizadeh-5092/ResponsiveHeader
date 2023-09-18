@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <a href=""><img src="./cyberpanel-temp-logo.svg" alt=""></a>
+        </div>
+        <div class="center">
+            <a href="">وبلاگ</a>
+            <a href="">تماس با ما</a>
+            <a href="">درباره ما</a>
+            <a href="">امکانات</a>
+        </div>
+        <div class="right">
+            <a href="">ورود</a>
+            <div class="sec">
+                <a href="">ثبت نام</a>
+            </div>
+        </div>
+        <div class="responsive">
+            <i onclick="show_menu()" class="glyphicon glyphicon-menu-hamburger"></i>
+        </div>
+        <div id="menu" class="menu">
+            <i onclick="close_menu()" class="fa fa-close"></i>
+            <br>
+            <br>
+            <a href="">وبلاگ</a>
+            <br>
+            <hr>
+            <a href="">تماس با ما</a>
+            <br>
+            <hr>
+            <a href="">درباره ما</a>
+            <br>
+            <hr>
+            <a href="">امکانات</a>
+            <br>
+            <hr>
+            <a href="">ورود</a>
+            <br>
+            <hr>
+            <a href="">ثبت نام</a>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <script>
+        function show_menu() {
+            document.getElementById("menu").style.display = "block";
+            document.getElementById("menu").style.width = "55%";
+        }
+        function close_menu() {
+            document.getElementById("menu").style.width = "0%";
+            document.getElementById("menu").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
